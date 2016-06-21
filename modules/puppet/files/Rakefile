@@ -1,0 +1,8 @@
+SSH = 'ssh -A -i /root/.ssh/sparknode1  -l root'
+
+desc "Run Puppet on ENV['CLIENT']"
+task :apply do
+    client = ENV['CLIENT']
+    sh "git push"
+    sh "#{SSH}  #{CLIENT}  pull-updates"
+end
