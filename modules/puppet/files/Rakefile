@@ -1,4 +1,4 @@
-SSH = 'ssh -A -i /root/.ssh/sparknode1  -l aimountain@126.com'
+SSH = 'ssh -A -i /root/.ssh/sparknode1 '
 
 desc "Run Puppet on ENV['CLIENT']"
 task :apply do
